@@ -134,8 +134,8 @@ def main():
         mouse = win.getMouse() 
 
         # Get cell positions
-        x = int((mouse.x - padding)/((window_width - padding) / tile_size))
-        y = int((mouse.y - padding)/((window_height - padding) / tile_size))
+        x = int((mouse.x - padding)//((window_width - padding) / tile_size))
+        y = int((mouse.y - padding)//((window_height - padding) / tile_size))
                 
         # Draw square in clicked square and update highlighted variable of object
         if x >= 0 and y >= 0:
